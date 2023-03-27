@@ -1,0 +1,13 @@
+agent = []
+for i in range(5):
+    a = input()
+    if "FBI" in a:
+        agent.append(i+1)
+
+ans = ""
+if len(agent) > 0:
+    for j in agent:
+        ans += str(j)+" "
+    print(ans)
+else:
+    print("HE GOT AWAY!")
