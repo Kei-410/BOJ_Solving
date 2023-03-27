@@ -1,0 +1,11 @@
+while True:
+    tree = list(map(int,input().split()))
+    if tree[0] == 0:
+        break
+    num = tree[0]
+    del tree[0]
+    ans = 1
+    for i in range(0,len(tree),2):
+        ans *= tree[i]
+        ans -= tree[i+1]
+    print(ans)
