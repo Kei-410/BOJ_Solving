@@ -1,0 +1,12 @@
+num = list(map(int,input().split()))
+a = min(num)
+while True:
+    res = 0
+    for i in num:
+        if a%i == 0:
+            res +=1
+            
+    if res > 2:
+        print(a)
+        break
+    a += 1
