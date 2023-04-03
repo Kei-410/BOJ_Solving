@@ -1,0 +1,6 @@
+a, b = map(str,input().split())
+ra = int(a[::-1])
+rb = int(b[::-1])
+rs = str(ra + rb)
+s = int(rs[::-1])
+print(s)
