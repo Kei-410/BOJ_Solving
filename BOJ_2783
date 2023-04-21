@@ -1,0 +1,13 @@
+def gram(a,b):
+    k = a / b * float(1000)
+    return(k)
+
+price = []
+x, y = map(float,input().split())
+price.append(gram(x,y))
+
+for i in range(int(input())):
+    x1, y1 = map(float,input().split())
+    price.append(gram(x1,y1))
+    
+print(min(price))
